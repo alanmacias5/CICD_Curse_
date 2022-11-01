@@ -4,13 +4,13 @@ module.exports = {
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
-  // collectCoverage: true,
-  // collectCoverageFrom: ["./src/**"],
-  // coverageThreshold: { 
-  //   global: {
-  //     lines: 80
-  //   }
-  // },
-  // coveragePathIgnorePatterns: ['<rootDir>/src/index.ts'],
+   collectCoverage: true,
+   collectCoverageFrom: ["./src/**"],
+   coverageThreshold: { 
+     global: {
+       lines: 80,
+   },
+ },
+  coveragePathIgnorePatterns: ['<rootDir>/src/index.ts'],
   testPathIgnorePatterns: ['/node_modules/', '/.build/'],
 }
